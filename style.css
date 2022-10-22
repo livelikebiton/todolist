@@ -1,0 +1,144 @@
+html, body {
+    background-color: white;
+    text-align: center;
+    height: 100%;
+}
+
+@font-face {
+    src: url(assets/font/WashlloDemoRegular.ttf);
+    font-family: marsh;
+}
+
+.logo {
+    font-family: marsh;
+    font-weight: bold;
+    font-size: 48px;
+    color: black;
+    text-shadow: 3px -5px 5px gray;
+}
+
+form {
+    width: 80%;
+    height: 30%;
+    position: absolute;
+    background-image: url(assets/images/formbg.jpg);
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px black dashed;
+}
+
+#task {
+    background-color: transparent;
+    border: 1px solid black;
+    margin: 5px;
+    width: 90%;
+    padding-left: 15%;
+}
+
+.center-text {
+    align-items: center;
+}
+
+
+.data {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 72%;
+}
+
+
+.buttons {
+    display: inline;
+    position: absolute;
+    bottom: 4%;
+    right: 2%;
+}
+
+#tasksList {
+    position: absolute;
+    top: 50%;
+    left: 7%;
+}
+
+.container2 {
+    position: relative;
+    text-align: center;
+    width: 250px;
+    height: 200px;
+    direction: ltr;
+    float: left;
+    background-color: lightgreen;
+    border: 1px black dotted;
+    margin: 10px;
+}
+
+.timing {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    text-align: left;
+}
+
+.task {
+    position: absolute;
+    padding: 5%;
+    top: 7%;
+    left: 5%;
+    height: 150px;
+    width: 90%;
+    background-color: white;
+    border-radius: 25px;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
+    scrollbar-color: transparent;
+    overflow: transparent;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+    background-color: transparent;
+}
+
+.task .del {
+    display: none;
+    position: absolute;
+}
+
+.task:hover .del {
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    background-color: transparent;
+    border: transparent;
+}
+
+.container2:nth-last-child(1){
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.error {
+    color: red;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+}
